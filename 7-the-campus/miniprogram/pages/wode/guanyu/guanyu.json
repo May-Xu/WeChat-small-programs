@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "关于",
+  "navigationBarBackgroundColor": "#ECEFF1",
+  "backgroundColor": "#ECEFF1",
+  "enablePullDownRefresh": false
+}

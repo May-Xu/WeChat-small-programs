@@ -1,0 +1,114 @@
+@import "/miniprogram_npm/vant-weapp/common/index.wxss";
+page{
+	height: 100%;
+	color: #333;
+  flex-direction: column;
+ 	font: normal 30rpx/1.68 -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+}
+.container {
+	flex: 1;
+  display: flex;
+  flex-direction: column;
+ 	box-sizing: border-box;
+}
+.container-body{
+	flex: 1;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.container-footer{
+	width: 100%;
+	display: flex;
+	height: 88rpx;
+	border-top: 1rpx solid #ddd;
+	background: #fff;
+}
+.container-footer text{
+	flex: 1;
+	display: block;
+	text-align: center;
+	height: 88rpx;
+	line-height: 88rpx;
+	font-size: 34rpx;
+	border-left: 1rpx solid #ddd;
+}
+.container-footer text:first-child{
+	border-left: none;
+}
+.container-footer .btn-block{
+	border-radius: 0;
+}
+.container-footer .btn-block:after{
+	border: none;
+}
+.container-gray{
+	background: #f9f9f9;
+}
+input{
+	height: 60rpx;
+	line-height: 60rpx;
+ 	font-family: inherit;
+}
+.input-list{
+	padding: 0 20rpx;
+	margin: 20rpx 0;
+	background: #fff;
+	border-top: 1rpx solid rgb(25, 143, 197);
+	border-bottom: 1rpx solid rgb(25, 143, 197);
+}
+.input-list .input-item{
+	padding: 20rpx;
+	line-height: 2;
+	display: flex;
+	font-size: 30rpx;
+	border-top: 1rpx solid #e8e8e8;
+}
+.input-list .input-item:first-child{
+	border-top: 0;
+}
+.input-item-label{
+	display: block;
+	width: 5em;
+	color: rgb(0, 0, 0);
+}
+.input-item-content{
+	color: #333;
+	flex:1;
+}
+.input-item.input-item-full{
+	display: block;
+}
+.input-item.input-item-full .input-item-label{
+	width: 100%;
+}
+.input-item.input-item-full .input-item-content{
+	width: 100%;
+}
+.input-item.input-item-full textarea{
+	padding: 0;
+	height: 150rpx;
+	border: 1rpx solid #e8e8e8;
+	padding: 10rpx;
+}
+.input-item.input-item-full .img-upload{
+	padding: 0;
+}
+.input-item.input-item-adaption .input-item-label{
+	width: auto;
+	margin-right: 20rpx;
+}
+button{
+	font-size: 32rpx;
+	line-height: 72rpx;
+}
+.van-swipe-cell__left,
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: 44px;
+  font-size: 15px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}

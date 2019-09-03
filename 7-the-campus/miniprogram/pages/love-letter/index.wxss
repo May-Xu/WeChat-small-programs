@@ -1,0 +1,24 @@
+page{
+  background: #eeeeee
+}
+.container{
+  height: auto;
+  width: 100%;
+}
+.biankuang{
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  border:1rpx solid #eeeeee;
+  height:auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.anniu{
+  display: flex;
+  margin-top: 10px;
+}
+.chongzhi{
+  border-radius: 5px;
+  width: 30%;
+}

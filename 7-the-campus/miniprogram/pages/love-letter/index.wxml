@@ -1,0 +1,14 @@
+<view class="container">
+  <block wx:for-items="{{letter}}" wx:for-item="letter" wx:key="letter:id">
+    <view class="biankuang">
+      <view style="margin-left:10px;margin-right:10px;margin-top:5px;">
+        <text style="font-size:17px;">{{letter.content}}</text>
+      </view>
+      <view class="anniu">
+        <button class="chongzhi" data-respon='{{letter.content}}' plain="true" type="warn" bindtap="textPaste">一键复制</button>
+      </view>
+      <text decode="true">&nbsp;</text>
+    </view>
+  </block>
+  <view style="margin:0 0 15px 0;"></view>
+</view>

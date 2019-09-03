@@ -1,0 +1,34 @@
+<view class='instructions'>
+  <swiper class='swiper-block' 
+  indicator-dots="{{indicatorDots}}" 
+  indicator-active-color='#00DD77' 
+  autoplay="{{autoplay}}" 
+  interval="{{interval}}" 
+  duration="{{duration}}" 
+  previous-margin="85rpx" 
+  next-margin="85rpx" 
+  circular='true' bindchange="swiperChange1">
+    <block wx:for="{{imgUrls1}}" wx:key="" wx:index="{{index}}">
+        <swiper-item class='swiper-item'>
+            <image mode="aspectFill" src="{{item}}" class="slide-image {{swiperIndex1 == index ? ' ' : ''}}"/>
+            <!--<image mode="aspectFill" src="{{item}}" class="slide-image {{swiperIndex1 == index ? 'active' : ''}}"/>中间图片放大-->
+        </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='container'>
+  <view class="Courier-container">
+    <block wx:for-items="{{lost}}" wx:for-item="lost" wx:key="lost:id">
+      <view class="Courier-box" bindtap="toDetailsTap" data-aid='{{lost.id}}' data-biaoti='{{lost.biaoti}}' data-details='{{lost.details}}' data-time='{{lost.time}}' data-image='{{lost.image}}' data-radio='{{lost.radio}}' data-contact='{{lost.contact}}' data-weixin='{{lost.weixin}}'>
+        <view class="img-box">
+          <image src="{{lost.image}}" class="image" mode="aspectFill" lazy-load="true" />
+        </view>
+        <view class="Courier-title">{{lost.biaoti}}</view>
+        <van-tag mark type="primary">{{lost.time}}</van-tag>
+      </view>
+    </block>
+  </view>
+  <view bindtap='link_jump'>
+    <image class='suspension' src='/images/lost_button.png'></image>
+  </view>
+</view>

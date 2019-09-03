@@ -1,0 +1,53 @@
+page{
+  background-color: #ffffff
+}
+.container{
+  height: auto;
+  width: 100%;
+}
+.signature1{
+  right: 105rpx;
+  z-index:998;
+  position:absolute;
+  color: black;
+  top:155px;
+}
+.signature2{
+  right: 85rpx;
+  z-index:998;
+  position:absolute;
+  color: black;
+  top:175px;
+}
+.biankuang{
+  box-shadow:0 3rpx 10px 2px #eeeeee;
+  background: #eeeeee;
+  border:2rpx solid #eeeeee;
+  height:80px;
+  width:80px
+}
+.xhx{
+  margin-top:30rpx;
+  display: flex;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.username{
+  color: #0066FF;
+}
+.text{
+  height:auto;
+  margin-left:90rpx;
+  margin-right:30rpx;
+}
+.time{
+  margin-top: 7px;
+  color: #AAAAAA;
+  margin-left:30rpx;
+}
+.suspension{
+  position: fixed;
+  width:40px;
+  height:40px;
+  bottom: 50px;
+  right: 30px;
+}

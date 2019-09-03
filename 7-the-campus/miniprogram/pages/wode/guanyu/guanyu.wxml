@@ -1,0 +1,17 @@
+<view class='container'>
+  <view class='title'>7号校园</view>
+  <view class='Version'>Version 1.4.2</view>
+  <view class='introduce_title'>小程序简介：</view>
+  <view class='introduce'>本小程序旨在给学生提供一个交友寻物平台。提供豆瓣网、去哪儿网排行榜上前一百的内容，课余时间不再空闲；提供针对全校大学生发布表白信息、失物招领、二手物品、心情专区等板块，再也不怕没人聊天啦。</view>
+  <view class='my_title'>关于我们：</view>
+  <view class='my'>7号校园由许粤军个人开发，目前是大一学生，技术不是很完善，见谅</view>
+  <view class='contact_title'>联系我们：</view>
+  <view class='contact'>
+    <view>企鹅：2933118334</view>
+    <view>电话：13787851338</view>
+  </view>
+  <view class="all">
+      <view class="weui-footer__text">感谢使用</view>
+      <view class="weui-footer__text">Copyright© 2019-2019 7号校园团队.All Rights Reserved</view>
+  </view>
+</view>

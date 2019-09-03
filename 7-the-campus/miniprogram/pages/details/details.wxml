@@ -1,0 +1,40 @@
+<view class='container'>
+  <view class='title_time'>
+    <text class='title'>标题：</text>
+    <text class='time'>发布时间</text>
+  </view>
+  <view class='time_title'>
+    <text class='biaoti'>{{biaoti}}</text>
+    <text decode='true' class='shijian'>{{time}}&nbsp;&nbsp;&nbsp;&nbsp;</text>
+  </view>
+  <view class='hr'></view>
+  <view style='margin-top:4px;'></view>
+  <view class='type'>
+    <view class="line"></view>
+    <view class='qishi'>{{radio}}</view>
+    <view style='margin-left: 20%;'></view>
+    <view class="line"></view>
+    <view class='qishi'>发布者：{{contact}}</view>
+  </view>
+  <view style='margin-top:4px;'></view>
+  <view class='hc'></view>
+  <view class='type'>
+    <view class="line"></view>
+    <view class='qishi'>联系方式：{{weixin}}</view>
+    <text decode='true'>&nbsp;&nbsp;</text>
+    <view class='copy' bindtap='textPaste'>点我复制</view>
+  </view>
+  <view style='margin-top:4px;'></view>
+  <view class='hc'></view>
+  <view class='type'>
+    <view class="line"></view>
+    <view class='qishi'>内容：</view>
+  </view>
+  <view style='margin-top:4px;'></view>
+  <view class='hc'></view>
+  <text class='details'>{{details}}</text>
+  <view style='margin-top:4px;'></view>
+  <view class='hc'></view>
+  <view style='margin-top:4px;'></view>
+  <image class='biankuang' src='{{image}}' mode="widthFix" bindtap="previewImage"></image>
+</view>

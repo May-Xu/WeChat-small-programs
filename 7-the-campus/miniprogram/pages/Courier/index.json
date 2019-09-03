@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "做任务",
+  "navigationBarBackgroundColor": "#FFAA33",
+  "backgroundColor": "#FFAA33",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 400
+}

@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class="Courier-container">
+    <block wx:for-items="{{user}}" wx:for-item="user" wx:key="user:_id">
+      <view class="Courier-box">
+        <view  bindtap="toDetailsTap" data-aid='{{user.id}}' data-biaoti='{{user.biaoti}}' data-details='{{user.details}}' data-time='{{user.time}}' data-image='{{user.image}}' data-radio='{{user.radio}}' data-contact='{{user.contact}}' data-weixin='{{user.weixin}}'>
+          <view class="img-box">
+            <image src="{{user.image}}" class="image" mode="aspectFill" lazy-load="true" />
+          </view>
+          <view class="Courier-title">{{user.biaoti}}</view>
+        </view>
+        <view style='display:flex;'>
+          <view class="Courier-price">
+            <button type='warn' data-id="{{user._id}}" class='del' bindtap='onRemove'>删除</button>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="zanwu">
+    <block wx:if="{{!information}}">
+      <image class="zanwu-img" src="/images/zanwu.png" mode="aspectFill"></image>
+      <view class="zanwu-text">同学快去发布一条消息吧</view>
+    </block>
+  </view>
+</view>

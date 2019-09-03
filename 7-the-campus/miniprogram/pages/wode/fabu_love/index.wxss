@@ -1,0 +1,70 @@
+.del{
+  font-size: 13px;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+page{
+  background-color: #F2f2f2;
+}
+.container{
+  background-color: #F2f2f2;
+  min-height: auto;
+  display: block;
+}
+.Courier-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+  background-color: #F2f2f2;
+}
+.Courier-box{
+  width: 339rpx;
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius:5px;
+}
+.Courier-box .img-box{
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+.Courier-box .img-box image{
+   width: 339rpx;
+   height: 339rpx;
+}
+.Courier-box .Courier-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 26rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+}
+.Courier-box .Courier-price{
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0;
+  color:#0066FF;
+  margin-left: 24rpx;
+}
+.zanwu{
+  align-items:cente;
+  text-align:center;
+  margin-top: 50%;
+}
+.zanwu-img{
+  height: 75px;
+  width: 75px;
+}
+.zanwu-text{
+  color: #888888
+}

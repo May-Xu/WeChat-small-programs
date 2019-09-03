@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "失物所",
+  "navigationBarBackgroundColor": "#00DD77",
+  "backgroundColor": "#00DD77",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 400
+}

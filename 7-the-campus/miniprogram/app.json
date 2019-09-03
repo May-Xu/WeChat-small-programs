@@ -1,0 +1,96 @@
+{
+  "pages": [
+    "pages/entrance/index",
+    "pages/Courier/index",
+    "pages/Courier_fabu/index",
+    "pages/lost/index",
+    "pages/lost_fabu/index",
+    "pages/find/index",
+    "pages/find_fabu/index",
+    "pages/love/index",
+    "pages/love_fabu/index",
+    "pages/olds/index",
+    "pages/olds_fabu/index",
+    "pages/authorize/authorize",
+    "pages/details/details",
+    "pages/teasing/index",
+    "pages/teas_fabu/index",
+    "pages/movie/index",
+    "pages/food/index",
+    "pages/love-letter/index",
+    "pages/wode/wode",
+    "pages/wode/guanyu/guanyu",
+    "pages/wode/manual/manual",
+    "pages/wode/fabu_lost/index",
+    "pages/wode/fabu_find/index",
+    "pages/wode/fabu_love/index",
+    "pages/wode/fabu_olds/index",
+    "pages/wode/fabu_teasing/index",
+    "pages/wode/fabu_acting/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "7号校园",
+    "navigationBarBackgroundColor": "#35B6DD",
+    "backgroundColor": "#35B6DD"
+  },
+  "usingComponents": {
+    "van-picker": "/miniprogram_npm/vant-weapp/picker/index",
+    "van-panel": "/miniprogram_npm/vant-weapp/panel/index",
+    "van-button": "/miniprogram_npm/vant-weapp/button/index",
+    "van-row": "/miniprogram_npm/vant-weapp/row/index",
+    "van-col": "/miniprogram_npm/vant-weapp/col/index",
+    "van-notice-bar": "/miniprogram_npm/vant-weapp/notice-bar/index",
+    "van-loading": "/miniprogram_npm/vant-weapp/loading/index",
+    "van-dialog": "/miniprogram_npm/vant-weapp/dialog/index",
+    "van-progress": "/miniprogram_npm/vant-weapp/progress/index",
+    "van-radio": "/miniprogram_npm/vant-weapp/radio/index",
+    "van-radio-group": "/miniprogram_npm/vant-weapp/radio-group/index",
+    "van-notify": "/miniprogram_npm/vant-weapp/notify/index",
+    "van-collapse": "/miniprogram_npm/vant-weapp/collapse/index",
+    "van-collapse-item": "/miniprogram_npm/vant-weapp/collapse-item/index",
+    "van-swipe-cell": "/miniprogram_npm/vant-weapp/swipe-cell/index",
+    "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
+    "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
+    "van-switch-cell": "/miniprogram_npm/vant-weapp/switch-cell/index",
+    "van-datetime-picker": "/miniprogram_npm/vant-weapp/datetime-picker/index",
+    "van-field": "/miniprogram_npm/vant-weapp/field/index",
+    "van-steps": "/miniprogram_npm/vant-weapp/steps/index",
+    "van-transition": "/miniprogram_npm/vant-weapp/transition/index",
+    "van-toast": "/miniprogram_npm/vant-weapp/toast/index",
+    "van-tag": "/miniprogram_npm/vant-weapp/tag/index"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#f96991",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/entrance/index",
+        "text": "校园",
+        "iconPath": "images/house1.png",
+        "selectedIconPath": "images/house.png"
+      },
+      {
+        "pagePath": "pages/love-letter/index",
+        "text": "土味情话",
+        "iconPath": "images/qh.png",
+        "selectedIconPath": "images/qh2.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "images/people1.png",
+        "selectedIconPath": "images/people.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

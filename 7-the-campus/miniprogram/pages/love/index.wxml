@@ -1,0 +1,34 @@
+<view class='instructions'>
+  <swiper class='swiper-block' 
+  indicator-dots="{{indicatorDots}}" 
+  indicator-active-color='#00CED1' 
+  autoplay="{{autoplay}}" 
+  interval="{{interval}}" 
+  duration="{{duration}}" 
+  previous-margin="85rpx" 
+  next-margin="85rpx" 
+  circular='true' bindchange="swiperChange1">
+    <block wx:for="{{imgUrls1}}" wx:key="" wx:index="{{index}}">
+        <swiper-item class='swiper-item'>
+            <image mode="aspectFill" src="{{item}}" class="slide-image {{swiperIndex1 == index ? ' ' : ''}}"/>
+            <!--<image mode="aspectFill" src="{{item}}" class="slide-image {{swiperIndex1 == index ? 'active' : ''}}"/>中间图片放大-->
+        </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='container'>
+  <view class="Courier-container">
+    <block wx:for-items="{{user}}" wx:for-item="user" wx:key="user:id">
+      <view class="Courier-box" bindtap="toDetailsTap" data-aid='{{user.id}}' data-biaoti='{{user.biaoti}}' data-details='{{user.details}}' data-time='{{user.time}}' data-image='{{user.image}}' data-radio='{{user.radio}}' data-contact='{{user.contact}}' data-weixin='{{user.weixin}}'>
+        <view class="img-box">
+          <image src="{{user.image}}" class="image" mode="aspectFill" lazy-load="true" />
+        </view>
+        <view class="Courier-title">{{user.biaoti}}</view>
+        <van-tag mark type="primary">{{user.time}}</van-tag>
+      </view>
+    </block>
+  </view>
+  <view bindtap='link_jump'>
+    <image class='suspension' src='/images/love_button.png'></image>
+  </view>
+</view>

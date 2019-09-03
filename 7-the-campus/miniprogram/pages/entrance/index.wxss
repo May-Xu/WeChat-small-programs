@@ -1,0 +1,89 @@
+.container{
+  overflow: hidden;
+  overflow-y: hidden;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.border-bottom{
+  border-bottom: 7px solid #eeeeee;
+}
+.slide-image{
+  width:100%;
+}
+.swiper-border{
+  box-shadow:0 3rpx 10px 2px lightgrey;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  border:5rpx solid #eeeeee;
+  height:9rem;
+  width:90%;
+  padding:20rpx;
+  margin:1% auto;
+}
+.usermotto {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-top: 40rpx;
+  height: 250rpx;
+  width: 100%;
+}
+.r {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #f7f7f7;
+  /*padding: 20px;*//*position: relative;*/
+  width: 45%;
+  height: 250rpx;
+  box-shadow: 0rpx 10rpx 50rpx 10rpx rgba(85, 85, 85, 0.10);
+  border: 3px solid #e4e4e2;
+  /*box-shadow: 0px 3px 5px 1px #e4e4e299;*/
+}
+.r:active {
+  background: #7f8c8d;
+}
+.img {
+  width: 64px;
+  height: 64px;
+}
+.weatherwrap{
+  height: 100%;
+  display:flex;
+  flex-direction:column;
+  box-sizing:border-box;
+  padding:15rpx 15rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 10rpx;
+  color:  #666;
+  font-size:15px;
+  justify-content:space-around;
+  align-items: center;
+  background-color:#f5f5f5;
+}
+.info{
+  margin-top:20rpx;
+  width:100%;
+  height:225px;
+}
+.city{
+  margin: 20rpx;
+  border-bottom:1px solid #2a579a;
+}
+.temperature{
+  font-size: 30px;
+  color: #2a579a;
+}
+.tianqi{
+  line-height: 22px;
+  margin: 20rpx;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}

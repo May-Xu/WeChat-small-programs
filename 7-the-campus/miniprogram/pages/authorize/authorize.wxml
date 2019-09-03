@@ -1,0 +1,18 @@
+<view wx:if="{{canIUse}}">
+  <text decode="true">\n</text>
+  <view class='header'>
+      <image src='https://7875-xu-75d8e6-1259041272.tcb.qcloud.la/default/7号校园.png?sign=cbba1875a5eb57b875848ee48f13c1d7&t=1555591770'></image>
+  </view>
+  <view class='title'>7号校园</view>
+  <view class="get">需要获取您的</view>
+  <view class="get">公开信息以继续</view>
+  <view class='content'>
+      <view style="color: #9d9d9d;">该程序将获得以下授权</view>
+      <text>- 获得你的公开信息(昵称，头像等)</text>
+  </view>
+  <button class="bottom" type="button" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+    授权获取信息
+  </button>
+</view>
+
+<view wx:else>请升级微信版本</view>

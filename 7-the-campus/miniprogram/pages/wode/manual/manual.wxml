@@ -1,0 +1,3 @@
+<view class="butt">
+  <van-button type="primary" size="large" open-type="feedback">意见反馈</van-button>
+</view>

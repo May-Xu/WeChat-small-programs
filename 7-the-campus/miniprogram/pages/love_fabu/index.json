@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "告白巷",
+  "navigationBarBackgroundColor": "#00CED1",
+  "backgroundColor": "#00CED1",
+  "enablePullDownRefresh": false
+}

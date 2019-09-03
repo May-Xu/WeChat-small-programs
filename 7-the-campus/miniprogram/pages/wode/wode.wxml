@@ -1,0 +1,35 @@
+<view class='avatar-wrapper'>
+  <view class='userinfo'>
+    <view><text>\n</text></view>
+    <view><text>\n</text></view>
+    <view class="biankuang">
+      <view class='center'>
+        <image class="userinfo-avatar" wx:if="{{userInfo && userInfo.avatarUrl}}" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+      </view>
+      <view class='center'>
+        <text class="userinfo-nickname" decode="{{true}}">{{userInfo.nickName}}&nbsp;</text>
+        <image class='gender' style='vertical-align: middle;' src="{{userInfo.gender == 0? '/images/nv.png': '/images/nan.png'}}"></image>
+      </view>
+      <view class='center'>
+        <text>自强不息，厚德载物</text>
+      </view>
+    </view>
+  </view>
+  <view><text>\n</text></view>
+
+  <van-collapse value="{{ active2 }}" data-key="active2" accordion bind:change="onChange">
+    <van-collapse-item title="我的发布" value="">
+      <van-cell title="失物发布" is-link url="fabu_lost/index" link-type="navigateTo" />
+      <van-cell title="招领发布" is-link url="fabu_find/index" link-type="navigateTo" />
+      <van-cell title="告白发布" is-link url="fabu_love/index" link-type="navigateTo" />
+      <van-cell title="快递发布" is-link url="fabu_acting/index" link-type="navigateTo" />
+      <van-cell title="二手发布" is-link url="fabu_olds/index" link-type="navigateTo" />
+      <van-cell title="心情发布" is-link url="fabu_teasing/index" link-type="navigateTo" />
+    </van-collapse-item>
+  </van-collapse>
+  <van-cell title="关于程序" is-link url="guanyu/guanyu" link-type="navigateTo" />
+  <van-cell title="用户反馈" is-link url="manual/manual" link-type="navigateTo" />
+  <demo-block title="">
+  <van-steps steps="{{ steps }}" active="{{ active }}" direction="vertical" active-color="#f44" />
+</demo-block>
+</view>

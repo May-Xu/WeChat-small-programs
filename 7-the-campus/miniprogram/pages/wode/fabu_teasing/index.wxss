@@ -1,0 +1,56 @@
+.item {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #eeeeee;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+text{
+  overflow:hidden; /*超出一行文字自动隐藏*/
+  text-overflow:ellipsis;/*文字隐藏后添加省略号*/
+  white-space:nowrap;  /*强制不换行*/
+}
+.content {
+  width: 100%;
+  line-height: 22px;
+  margin-right:0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  margin-left: -85px;
+}
+
+.del {
+  background-color: orangered;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  -webkit-transform: translateX(90px);
+  transform: translateX(90px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.touch-move .content,
+.touch-move .del {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.zanwu{
+  align-items:cente;
+  text-align:center;
+  margin-top: 50%;
+}
+.zanwu-img{
+  height: 75px;
+  width: 75px;
+}
+.zanwu-text{
+  color: #888888
+}

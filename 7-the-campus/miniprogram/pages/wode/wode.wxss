@@ -1,0 +1,52 @@
+.border-top{
+  border-top: 1px solid #eeeeee;
+}
+.center{
+  text-align:center;
+  align-items:center;
+  justify-content: center;
+  margin: auto;
+}
+.userinfo {
+	align-items: center;
+  width: 750rpx;
+}
+
+.userinfo-avatar {
+	width: 165rpx;
+	height: 165rpx;
+  border-radius: 50%;
+}
+.gender{
+	width: 35rpx;
+	height: 35rpx;
+}
+.userinfo-nickname {
+  font-family: "黑体";
+  font-weight:bold;
+  font-size: 19px;
+  vertical-align: middle;
+}
+.avatar-wrapper {
+  background: #35B6DD;
+  position: relative;
+  padding: 10px 0;
+  height: 150px;
+  border-bottom-left-radius:47%;
+  border-bottom-right-radius:47%;
+}
+.biankuang{
+  box-shadow:0 3rpx 10px 2px lightgrey;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  border:1rpx solid #eeeeee;
+  height:9rem;
+  width:500rpx;
+  padding:20rpx;
+  margin:0 auto;
+}
+.line{
+  background-color: #DDDDDD;
+  border:1rpx solid #eeeeee;
+  width:500rpx;
+}

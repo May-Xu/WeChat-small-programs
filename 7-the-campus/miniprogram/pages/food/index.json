@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "长沙美食",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 400
+}

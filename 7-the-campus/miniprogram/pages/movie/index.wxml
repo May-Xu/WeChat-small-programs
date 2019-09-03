@@ -1,0 +1,40 @@
+<view class='container'>
+  <view class="head">
+    <view class="mao">
+      <text decode="true">豆&nbsp;瓣&nbsp;电&nbsp;影&nbsp;排&nbsp;行&nbsp;榜</text>
+    </view>
+    <view class="top">
+      <image class="top1" src="/images/1.png"></image>
+      <image class="top1" src="/images/0.png"></image>
+      <image class="top1" src="/images/00.png"></image>
+    </view>
+    <view class="mao">
+      <text decode="true">每&nbsp;周&nbsp;三&nbsp;数&nbsp;据&nbsp;更&nbsp;新</text>
+    </view>
+  </view>
+
+  <block wx:for-items="{{movie}}" wx:for-item="movie" wx:key="movie:id">
+    <view class="body">
+      <view class="fenge">
+        <view class="rank">{{movie.Top}}</view>
+        <view class="line"></view>
+      </view>
+      <view class="tail">
+        <view style="margin-left:17px">
+          <image class="image" src="{{movie.image}}" mode="aspectFill"></image>
+        </view>
+        <view class="all">
+          <view class="title">{{movie.name}}</view>
+          <view class="starring">{{movie.starring}}</view>
+          <view class="score">{{movie.type}}</view>
+          <view class="score">{{movie.year}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+    <view class="weui-loadmore" wx:if="{{loading}}">
+      <view class="weui-loading"></view>
+      <view class="weui-loadmore__tips">正在加载</view>
+    </view>
+    <view wx:if="{{isNone}}" class="tips">我是有底线的！</view>
+</view>

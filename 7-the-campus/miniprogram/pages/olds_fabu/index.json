@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "有二手",
+  "navigationBarBackgroundColor": "#9900FF",
+  "backgroundColor": "#9900FF",
+  "enablePullDownRefresh": false
+}

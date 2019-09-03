@@ -1,0 +1,94 @@
+page{
+  background-color: #00CED1;
+}
+.container{
+  height: 100%;
+  width: 100%;
+}
+.biankuang{
+  background: #eeeeee;
+  border:2rpx solid #eeeeee;
+  border-radius: 10px;
+  height:80px;
+  width:80px;
+}
+.title{
+  margin-top: 30px;
+  text-align:center;
+  color: #FFFF33;
+  font-size: 17px;
+}
+.whole{
+  margin-top: 50px;
+}
+.head{
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  background: #FFFF33;
+  border:1rpx solid #FFFF33;
+  height:13rem;
+  width:85%;
+  padding:20rpx;
+  margin:0 auto;
+  border-bottom:1px solid #ccc;
+}
+.biankuang{
+  background: #FF7744;
+  border:1rpx solid #FF7744;
+  height:188px;
+  width:94%;
+  padding:20rpx;
+  margin:0 auto;
+  display: flex;
+}
+.img{
+  justify-content: center;
+  width: 500px;
+  height: 188px;
+  margin:0 auto;
+}
+.body{
+  border-bottom-right-radius:10px;
+  border-bottom-left-radius:10px;
+  background: #ffffff;
+  border:1rpx solid #ffffff;
+  height:auto;
+  width:85%;
+  padding:20rpx;
+  margin:0 auto;
+}
+.OneLine{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.top{
+  font-style:italic;
+  font-size: 34px;
+  color: #20B2AA;
+}
+.name{
+  margin-top: 15px;
+}
+.score{
+  margin-top: 15px;
+  color: #20B2AA;
+}
+.TwoLine{
+  display: flex;
+}
+.address{
+  margin-left: 10px;
+  color: #999;
+}
+.capita{
+  position: static;
+  float: left;
+  color: #20B2AA;
+}
+.One{
+  white-space:nowrap;
+}
+.Two{
+  margin-left: 38px;
+}

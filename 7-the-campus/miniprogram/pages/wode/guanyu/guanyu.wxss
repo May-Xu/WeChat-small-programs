@@ -1,0 +1,60 @@
+page{
+  background:#ECEFF1;
+}
+.container{
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.title{
+  margin-top: 4%;
+  font-family: "微软雅黑";
+  font-size: 25px;
+  color: #000000;
+  text-align: center;
+}
+.Version{
+  font-family: "微软雅黑";
+  font-size: 15px;
+  color: #666666;
+  text-align: center;
+}
+.introduce_title{
+  margin-top: 13%;
+  font-family: "微软雅黑";
+  color: black;
+  font-weight: 700;
+}
+.introduce{
+  margin-top: 4%;
+  font-family: "微软雅黑";
+  color: black;
+}
+.my_title{
+  margin-top:8%;
+  font-family: "微软雅黑";
+  color: black;
+  font-weight: 700;
+}
+.my{
+  margin-top: 4%;
+  font-family: "微软雅黑";
+  color: black;
+}
+.contact_title{
+  margin-top:8%;
+  font-family: "微软雅黑";
+  color: black;
+  font-weight: 700;
+}
+.contact{
+  margin-top: 4%;
+  font-family: "微软雅黑";
+  color: black;
+}
+.all{
+  margin-top: 4%;
+  color:#666666;
+  font-size:14px;
+  text-align:center;
+}

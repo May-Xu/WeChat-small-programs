@@ -1,0 +1,90 @@
+page{
+  background-color: #F2f2f2;
+}
+.instructions{
+  width: 100%;
+  background-color: white;
+  line-height: 60rpx;/* 可以改变swiper上小圆点的位置 */
+  position: relative;
+}
+.swiper-block {
+  background: #ADD8E6;
+  height: 340rpx;
+  width: 100%;
+}
+.swiper-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: unset;
+}
+.slide-image{
+  height: 250rpx;
+  width: 490rpx;
+  border-radius: 20rpx;
+  margin: 0rpx 50rpx ;
+  z-index: 1;
+}
+.active{
+  transform: scale(1.14);
+  transition:all .2s ease-in 0s;
+  z-index: 20; 
+}
+
+
+.container {
+  background-color: #F2f2f2;
+  min-height: 100%;
+  display: block;
+}
+.Courier-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+  background-color: #F2f2f2;
+}
+.Courier-box{
+  width: 339rpx;
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius:5px;
+}
+.Courier-box .img-box{
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+.Courier-box .img-box image{
+   width: 339rpx;
+   height: 339rpx;
+}
+.Courier-box .Courier-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 26rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+}
+.Courier-box .Courier-price{
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0;
+  color:#0066FF;
+  margin-left: 24rpx;
+}
+.suspension{
+  position: fixed;
+  width:60px;
+  height:60px;
+  bottom: 40px;
+  right: 30px;
+}

@@ -1,0 +1,69 @@
+<view>
+  <form bindsubmit="up_img">
+    <view class='title'>启事标题：</view>
+    <view class="biaoti_biankuang">
+      <view class='title-cells' style='margin-top: 5px;'>
+        <input class='title-input' value='{{biaoti}}' name='biaoti' maxlength='10' placeholder='请输入启事标题' bindblur='bindbiaoti' style='font-size:17px;'></input>
+      </view>
+    </view>
+                
+    <view class='title'>详情：</view>
+    <view class="xiangqing_biankuang">
+      <view class="cells cells_after-title" style='margin-top: 5px;' >
+        <view class='cell'>
+          <view class="cell__bd">
+            <textarea  class="textarea" placeholder="请填写详情：" style="height: 7em" value='{{details}}' bindblur='bindTextAreaBlur' maxlength='60' name='details'/>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <text class='title'>联系：</text>
+
+    <view class="container container-gray">
+      <view class="group">
+        <view class="group-body">
+          <view class="input-list">
+
+            <view class="input-item">
+              <text class="input-item-label">发布者：</text>
+              <view class="input-item-content">
+                <input type="text" value='{{contact}}' maxlength='5' placeholder="如：一直爱着你" bindblur='bindcontact'></input>
+              </view>
+            </view>
+
+            <view class="input-item">
+              <text class="input-item-label">联系号：</text>
+              <view class="input-item-content">
+                <input type="number" value='{{weixin}}' placeholder="如：5201314" bindblur='bindweixin'></input>
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <text>点击上传图片：</text>
+    <view class="uploader">
+        <view class="uploader__bd">
+            <view class="uploader__files" id="uploaderFiles">
+                <block wx:for="{{images}}" wx:key="*this">
+                    <view class="uploader__file ava" bindtap="previewImage" id="{{item}}">
+                        <image class="uploader__img" src="{{item}}" mode="aspectFill" />
+                        <image class="trash" src='/images/trash.png' catchtap='deleteimg' />
+                    </view>
+                </block>
+            </view>
+            <view class="uploader__input-box">
+                <view class="uploader__input" bindtap="chooseImage"></view>
+            </view> 
+        </view>
+    </view>
+
+    <view><text>\n</text></view>
+    <view class="btn-area" style='margin-top:15rpx;'>
+        <button type="button" class="btn" form-type="submit" bind:click="handleClick" style="background-color:#00DD77;color:white;">发布</button>
+    </view>
+  </form>
+</view>

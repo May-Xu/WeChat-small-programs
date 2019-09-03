@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "小小心情",
+  "navigationBarBackgroundColor": "#FFD700",
+  "backgroundColor": "#FFD700",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 400
+}

@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="title">
+      精选美食
+  </view>
+  <block wx:for-items="{{food}}" wx:for-item="food" wx:key="food:id">
+    <view class="whole">
+      <view class="head">
+        <view class="biankuang">
+        <image class="img" src="{{food.image}}" mode="aspectFill"></image>
+        </view>
+      </view>
+      <view class="body">
+        <view class="OneLine">
+          <view class="top">{{food.top}}</view>
+          <view class="name">{{food.name}}</view>
+          <view class="score">{{food.score}}/5分</view>
+        </view>
+        <view class="TwoLine">
+          <view class="One">
+            <text class="capita" decode="true">{{food.capita}}：¥{{food.capitas}}&nbsp;</text>
+            <view class="address">{{food.address}}：</view>
+          </view>
+          <view class="Two">
+            <view>{{food.addresss}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

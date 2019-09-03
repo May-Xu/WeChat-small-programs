@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "领快递",
+  "navigationBarBackgroundColor": "#FFAA33",
+  "backgroundColor": "#FFAA33",
+  "enablePullDownRefresh": false
+}

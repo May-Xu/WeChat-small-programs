@@ -1,0 +1,71 @@
+<view class='container'>
+  <view style='height:138px;'>
+    <image src='/images/voice.jpg' style='height:138px;width:100%;' bindtap='test'></image>
+  </view>
+  <view style='z-index:-1;height:65px;margin-top:2px;width:100%;'>
+    <image src='/images/filter.png' style='height:65px;width:100%;'></image>
+  </view>
+
+  <view style='z-index:998;position:absolute;top:140px;left:30rpx;width:70px;'>
+    <image src='/images/lost.png' style='height:60px;width:60px;' bindtap='lost'></image>
+  </view> 
+
+  <view style='z-index:998;position:absolute;top:140px;left:170rpx;width:70px;'>
+    <image src='/images/find.png' style='height:60px;width:60px;' bindtap='find'></image>
+  </view>
+
+  <view style='z-index:998;position:absolute;top:140px;right:310rpx;width:60px;'>
+    <image src='/images/love.png' style='height:60px;width:60px;' bindtap='love'></image>
+  </view>
+
+  <view style='z-index:998;position:absolute;top:140px;right:160rpx;width:60px;'>
+    <image src='/images/acting.png' style='height:60px;width:60px;' bindtap='acting'></image>
+  </view>
+
+  <view style='z-index:998;position:absolute;top:140px;right:30rpx;width:50px;'>
+    <image src='/images/olds.png' style='height:60px;width:60px;' bindtap='olds'></image>
+  </view>
+  <van-notice-bar
+  backgroundColor="#FFC0CB"
+  left-icon="volume-o"
+  color="#FF4500"
+  text="牢记社会主义核心价值观：富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善。"
+/>
+
+  <view class="usermotto">
+    <van-transition name="fade-up" show="{{ show }}" class='r' style='margin: 0 7px;' bindtap='movie'>
+      <image src='/images/movie.png' class='img' style='margin:0 8rpx;'></image>
+      <view style='font-size:18px;'>找好电影</view>
+    </van-transition>
+    
+    <van-transition name="fade-up" show="{{ show }}" class='r' style='margin: 0 7px;' bindtap='food'>
+      <image src='/images/food.png' class='img' style='margin:0 8rpx;margin-left:17px;'></image>
+      <view style='width:100%;margin:0 30rpx;font-size:18px;'>去哪儿吃</view>
+    </van-transition>
+  </view>
+
+  <view class="usermotto">
+    <van-transition name="fade-up" show="{{ show }}" class='r' style='margin: 0 7px;' bindtap='tourism'>
+      <image src='/images/tourism.png' class='img' style="margin:0 8rpx;margin-left:14px;"></image>
+      <view style='font-size:18px;'>世界那么大</view>
+    </van-transition>
+    <van-transition name="fade-up" show="{{ show }}" class='r' style='margin: 0 7px;' bindtap='teasing'>
+      <image src='/images/tucao.png' class='img' style="margin:0 8rpx;margin-left:5px;"></image>
+      <view style='font-size:18px;'>小小心情</view>
+    </van-transition>
+  </view>
+  <text decode="true">&nbsp;</text>
+
+  <view class="weatherwrap">
+    <view class="city">{{address}}({{today}})</view>
+    <view class="temperature">{{temperature}}℃</view>
+    <view class="tianqi">
+      <text>天气：{{weather}}</text>
+      <text decode="true">&nbsp;&nbsp;&nbsp;风力：{{windpower}}级</text>
+    </view>
+    <view class="tianqi">
+      <text>湿度：{{humidity}}%</text>
+      <text decode="true">&nbsp;&nbsp;&nbsp;风向：{{winddirection}}</text>
+    </view>
+  </view>
+</view>

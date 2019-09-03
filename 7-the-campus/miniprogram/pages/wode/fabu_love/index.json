@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "告白发布",
+  "navigationBarBackgroundColor": "#35B6DD",
+  "backgroundColor": "#35B6DD",
+  "enablePullDownRefresh": true
+}

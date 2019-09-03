@@ -1,0 +1,8 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "招领处",
+  "navigationBarBackgroundColor": "#FA8072",
+  "backgroundColor": "#FA8072",
+  "enablePullDownRefresh": false
+}
