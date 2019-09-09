@@ -110,7 +110,7 @@ Page({
   },
   movie:function(){
     wx.navigateTo({
-      url: '/pages/movie/index',
+      url: '/pages/movies/index',
     })
   },
   food:function(){

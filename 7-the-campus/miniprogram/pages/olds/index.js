@@ -147,7 +147,7 @@ Page({
   onLoad: function (e) {
     var self = this;
     wx.showLoading({
-      title: '加载中......',
+      title: '加载中...',
       success(res) {
         self.setData({
           hide: true
@@ -181,7 +181,7 @@ Page({
       })
     })
   },
-  onShow: function () {
+  onReady: function () {
     var self = this
     setTimeout(function () {
       wx.hideLoading()
@@ -189,6 +189,15 @@ Page({
         hide: false
       })
     }, 2000)
+  },
+  onShow: function () {
+    //获取最新记录
+    this.setData({
+      page: 1,
+      olds: []
+    });
+    console.log("更新后的page:" + this.data.page)
+    this.queryPageOne();
   },
   //点击悬浮按钮跳转
   link_jump: function () {

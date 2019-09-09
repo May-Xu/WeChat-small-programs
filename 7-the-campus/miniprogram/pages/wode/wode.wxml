@@ -22,7 +22,7 @@
       <van-cell title="失物发布" is-link url="fabu_lost/index" link-type="navigateTo" />
       <van-cell title="招领发布" is-link url="fabu_find/index" link-type="navigateTo" />
       <van-cell title="告白发布" is-link url="fabu_love/index" link-type="navigateTo" />
-      <van-cell title="快递发布" is-link url="fabu_acting/index" link-type="navigateTo" />
+      <van-cell title="任务发布" is-link url="fabu_acting/index" link-type="navigateTo" />
       <van-cell title="二手发布" is-link url="fabu_olds/index" link-type="navigateTo" />
       <van-cell title="心情发布" is-link url="fabu_teasing/index" link-type="navigateTo" />
     </van-collapse-item>

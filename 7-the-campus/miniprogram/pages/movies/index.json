@@ -1,9 +1,9 @@
 {
   "backgroundTextStyle": "light",
   "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "看好剧",
-  "navigationBarBackgroundColor": "#FA8072",
-  "backgroundColor": "#FA8072",
+  "navigationBarTitleText": "电影列表",
+  "navigationBarBackgroundColor": "#DC143C",
+  "backgroundColor": "#DC143C",
   "enablePullDownRefresh": false,
   "onReachBottomDistance": 400
 }

@@ -1,0 +1,69 @@
+<view class="head">
+    <view class="prompt">正在热映</view>
+    <!--<view class="more">更多-->
+    <image style="height:12px;width:32px;margin-top:12px;margin-right:5px;" src="/images/more.png" bindtap="current"></image>
+</view>
+<view class="xhx">
+  <view class="container">
+    <scroll-view  scroll-x style="width: 100%">
+      <view class="scroll-view_H">
+        <block wx:for-items="{{in_theaters}}" wx:for-item="in_theaters" wx:key="in_theaters:id">
+          <view class="bind" bindtap="toDetailsTap" data-details='{{in_theaters.id}}'>
+            <image class="image" src="{{in_theaters.images.small}}" mode="aspectFill"></image>
+            <view class="title">{{in_theaters.title}}</view>
+            <view style="display:flex;">
+              <view class="score">评分：</view>
+              <view class="fs">{{in_theaters.rating.average}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<view class="head">
+    <view class="prompt">即将上映</view>
+    <!--<view class="more">更多-->
+    <image style="height:12px;width:32px;margin-top:12px;margin-right:5px;" src="/images/more.png" bindtap="soon"></image>
+</view>
+<view class="xhx">
+  <view class="container">
+    <scroll-view  scroll-x style="width: 100%">
+      <view class="scroll-view_H">
+        <block wx:for-items="{{coming_soon}}" wx:for-item="coming_soon" wx:key="coming_soon:id">
+          <view class="bind" bindtap="toDetailsTap" data-details='{{coming_soon.id}}'>
+            <image class="image" src="{{coming_soon.images.small}}" mode="aspectFill"></image>
+            <view class="title">{{coming_soon.title}}</view>
+            <view style="display:flex;">
+              <view class="score">评分：</view>
+              <view class="fs">{{coming_soon.rating.average}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<view class="head">
+    <view class="prompt">豆瓣Top250</view>
+    <!--<view class="more">更多-->
+    <image style="height:12px;width:32px;margin-top:12px;margin-right:5px;" src="/images/more.png" bindtap="top250"></image>
+</view>
+<view class="container" style="margin-bottom:12px;margin-top:10px;">
+  <scroll-view  scroll-x style="width: 100%">
+    <view class="scroll-view_H">
+      <block wx:for-items="{{movieTop}}" wx:for-item="movieTop" wx:key="movieTop:id">
+        <view class="bind" bindtap="toDetailsTap" data-details='{{movieTop.id}}'>
+          <image class="image" src="{{movieTop.images.small}}" mode="aspectFill"></image>
+          <view class="title">{{movieTop.title}}</view>
+          <view style="display:flex;">
+            <view class="score">评分：</view>
+            <view class="fs">{{movieTop.rating.average}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

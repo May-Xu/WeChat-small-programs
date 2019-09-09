@@ -1,0 +1,15 @@
+<van-toast id="van-toast" />
+<view style="margin-top:10px;"></view>
+<block wx:for-items="{{movieTop}}" wx:for-item="movieTop" wx:key="movieTop:id">
+  <view class="container" bindtap="toDetailsTap" data-details='{{movieTop.id}}'>
+    <view style="display:block;margin-left:10px;">
+      <image class="image" src="{{movieTop.images.small}}" mode="aspectFill"></image>
+      <view class="title">{{movieTop.title}}</view>
+      <view style="display:flex;">
+        <view class="score">评分：</view>
+        <view class="fs">{{movieTop.rating.average}}</view>
+      </view>
+      <text decode="true">\n</text>
+    </view>
+  </view>
+</block>

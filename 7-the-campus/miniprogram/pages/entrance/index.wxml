@@ -26,15 +26,15 @@
     <image src='/images/olds.png' style='height:60px;width:60px;' bindtap='olds'></image>
   </view>
   <van-notice-bar
-  backgroundColor="#FFC0CB"
+  backgroundColor="#00CED1"
   left-icon="volume-o"
-  color="#FF4500"
-  text="牢记社会主义核心价值观：富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善。"
+  color="#ffffff"
+  text="此刻在这个世界上依然有70亿部自传正在被撰写着，包括你的 。事实上，这些传记并没有文字。因为，你怎么做，你怎么活，就决定了你是谁。你可能身陷险境，你可能倍受嘲笑，你可能独自迎战，或者你会有一群死党，人生有限 ，你的自传，却有无限种写法。"
 />
 
   <view class="usermotto">
     <van-transition name="fade-up" show="{{ show }}" class='r' style='margin: 0 7px;' bindtap='movie'>
-      <image src='/images/movie.png' class='img' style='margin:0 8rpx;'></image>
+      <image src='/images/movies.png' class='img' style='margin:0 8rpx;'></image>
       <view style='font-size:18px;'>找好电影</view>
     </van-transition>
     

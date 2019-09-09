@@ -16,7 +16,7 @@ Page({
   onLoad: function (e) {
     var self = this;
     wx.showLoading({
-      title: '加载中......',
+      title: '加载中...',
       success(res) {
         self.setData({
           hide: true
@@ -174,13 +174,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
     var self = this
     setTimeout(function () {
       wx.hideLoading()
@@ -188,6 +181,20 @@ Page({
         hide: false
       })
     }, 2000)
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+    //获取最新记录
+    this.setData({
+      page: 1,
+      teasing: []
+    });
+    console.log("更新后的page:" + this.data.page)
+    this.queryPageOne();
   },
 
   /**

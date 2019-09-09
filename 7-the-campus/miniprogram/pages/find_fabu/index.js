@@ -248,7 +248,7 @@ Page({
           radio: radio
         })
         wx.showToast({
-          title: '发布成功请刷新',
+          title: '发布成功',
         })
       },
       fail: err => {
@@ -258,9 +258,6 @@ Page({
         })
         console.error('[数据库] [新增记录] 失败：', err)
       }
-    })
-    wx.showToast({
-      title: '发布成功请刷新',
     })
     wx.navigateBack({
       delta: 1

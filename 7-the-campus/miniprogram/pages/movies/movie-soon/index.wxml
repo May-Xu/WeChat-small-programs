@@ -1,0 +1,15 @@
+<van-toast id="van-toast" />
+<view style="margin-top:10px;"></view>
+<block wx:for-items="{{coming_soon}}" wx:for-item="coming_soon" wx:key="coming_soon:id">
+  <view class="container" bindtap="toDetailsTap" data-details='{{coming_soon.id}}'>
+    <view style="display:block;margin-left:10px;">
+      <image class="image" src="{{coming_soon.images.small}}" mode="aspectFill"></image>
+      <view class="title">{{coming_soon.title}}</view>
+      <view style="display:flex;">
+        <view class="score">评分：</view>
+        <view class="fs">{{coming_soon.rating.average}}</view>
+      </view>
+      <text decode="true">\n</text>
+    </view>
+  </view>
+</block>

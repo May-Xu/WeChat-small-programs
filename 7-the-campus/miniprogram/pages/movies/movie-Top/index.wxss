@@ -1,0 +1,28 @@
+page{
+  background: #ffffff;
+}
+.container{
+  display: inline-flex;
+  width: 33.33%;
+  justify-content: space-around;
+}
+.title{
+  font-size:13px;
+  color:#666666;
+  width:7em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.image{
+  height: 150px;
+  width: 105px;
+}
+.score{
+  font-size:13px;
+  color:#FFCC22;
+}
+.fs{
+  font-size:13px;
+  color:#FF0000;
+}

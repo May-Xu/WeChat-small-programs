@@ -9,7 +9,10 @@ Page({
     hide: true,
     information: false
   },
-  onShow: function () {
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
     var self = this
     setTimeout(function () {
       wx.hideLoading()
@@ -17,6 +20,9 @@ Page({
         hide: false
       })
     }, 2000)
+  },
+  onShow: function () {
+    this.onQuery()
   },
   onLoad: function (options) {
     var self = this;

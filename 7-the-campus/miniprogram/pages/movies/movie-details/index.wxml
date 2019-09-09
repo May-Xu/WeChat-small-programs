@@ -1,0 +1,80 @@
+<view class="container">
+    <image class="img-head" src="{{movie_details.images.large}}" bindtap="previewImage" data-path="{{movie_details.images.large}}" mode="aspectFill"/>
+    <view class="head" bindtap="previewImage" data-path="{{movie_details.images.large}}">
+      <text class="title">{{movie_details.title}}</text>
+      <text class="address">{{movie_details.countries+" · "+movie_details.year}}</text>
+      <view style="display:block;margin-top:40rpx;">
+        <text class="num">{{movie_details.wish_count}}</text>
+        <text style="font-size:11px;"> 人喜欢</text>
+        <text class="num">{{movie_details.comments_count}}</text>
+        <text style="font-size:11px;"> 条评论</text>
+      </view>
+    </view>
+    <image class="img-cover" bindtap="previewImage" data-path="{{movie_details.images.large}}" src="{{movie_details.images.large}}"/>
+  <text class="original-title">{{movie_details.original_title}}</text>
+  <view class="score">
+    <text class="type">评分</text>
+    <text class="average">{{movie_details.rating.average}}</text>
+  </view>
+  <view class="director">
+    <text class="type">导演</text>
+    <text class="respon">{{movie_details.directors[0].name}}</text>
+  </view>
+  <view class="director">
+    <text class="type">影人</text>
+    <text class="respon">{{casts}}</text>
+  </view>
+  <view class="director">
+    <text class="type">类型</text>
+    <text class="respon">{{type}}</text>
+  </view>
+  <view class="xhx"></view>
+  <view class="score">
+    <text class="jianjie">剧情简介</text>
+  </view>
+  <view class="content">
+    <text class="details">{{movie_details.summary}}</text>
+  </view>
+
+  <view style="margin-top:8px;"></view>
+  <view class="xhx"></view>
+  <view class="score">
+    <text class="type">影人</text>
+  </view>
+  <view style="margin-left:40rpx;">
+    <scroll-view  scroll-x style="width: 100%;white-space: nowrap;">
+      <view class="scroll-view_H">
+        <block wx:for-items="{{actor_img}}" wx:for-item="item" wx:key="">
+          <view class="bind">
+            <image class="image" src="{{item.avatars.small}}"/>
+            <view style="margin-left:15px;">
+              <text style="font-size: 12px;">{{item.name}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="xhx"></view>
+  <!--
+  <block wx:if="{{!information}}">
+    <view style="text-align:center;">
+      <text style="color:#CC0000">暂无预告片</text>
+    </view>
+  </block>
+  -->
+  <view class="video">
+    <video class="sp" src="{{movie_details.trailer_urls[0]}}" binderror="videoErrorCallback" style="width:100%;" controls="{{true}}" initial-time="0.01"></video>
+  </view>
+  <!--
+  <block wx:for-items="{{comments}}" wx:for-item="comments" wx:key="">
+    <view class="avator">
+      <image class="img-avator" src="{{comments.author.avatar}}"></image>
+      <view class="name-avator">
+        <view style="color:#0066FF;">{{comments.author.name}}</view>
+        <view>{{comments.content}}</view>
+      </view>
+    </view>
+  </block>
+  -->
+</view>

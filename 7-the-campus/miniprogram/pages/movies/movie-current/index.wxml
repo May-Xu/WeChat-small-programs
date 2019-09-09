@@ -1,0 +1,15 @@
+<van-toast id="van-toast" />
+<view style="margin-top:10px;"></view>
+<block wx:for-items="{{in_theaters}}" wx:for-item="in_theaters" wx:key="in_theaters:id">
+  <view class="container" bindtap="toDetailsTap" data-details='{{in_theaters.id}}'>
+    <view style="display:block;margin-left:10px;">
+      <image class="image" src="{{in_theaters.images.small}}" mode="aspectFill"></image>
+      <view class="title">{{in_theaters.title}}</view>
+      <view style="display:flex;">
+        <view class="score">评分：</view>
+        <view class="fs">{{in_theaters.rating.average}}</view>
+      </view>
+      <text decode="true">\n</text>
+    </view>
+  </view>
+</block>

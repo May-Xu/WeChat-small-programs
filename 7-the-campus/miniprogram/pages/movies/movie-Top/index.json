@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "豆瓣Top250",
+  "navigationBarBackgroundColor": "#0044BB",
+  "backgroundColor": "#0044BB",
+  "enablePullDownRefresh": false,
+  "onReachBottomDistance": 300
+}
