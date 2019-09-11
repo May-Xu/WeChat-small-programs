@@ -7,7 +7,7 @@
   <view class="container">
     <scroll-view  scroll-x style="width: 100%">
       <view class="scroll-view_H">
-        <block wx:for-items="{{in_theaters}}" wx:for-item="in_theaters" wx:key="in_theaters:id">
+        <block wx:for-items="{{in_theaters}}" wx:for-item="in_theaters" wx:key="">
           <view class="bind" bindtap="toDetailsTap" data-details='{{in_theaters.id}}'>
             <image class="image" src="{{in_theaters.images.small}}" mode="aspectFill"></image>
             <view class="title">{{in_theaters.title}}</view>
@@ -31,7 +31,7 @@
   <view class="container">
     <scroll-view  scroll-x style="width: 100%">
       <view class="scroll-view_H">
-        <block wx:for-items="{{coming_soon}}" wx:for-item="coming_soon" wx:key="coming_soon:id">
+        <block wx:for-items="{{coming_soon}}" wx:for-item="coming_soon" wx:key="">
           <view class="bind" bindtap="toDetailsTap" data-details='{{coming_soon.id}}'>
             <image class="image" src="{{coming_soon.images.small}}" mode="aspectFill"></image>
             <view class="title">{{coming_soon.title}}</view>
@@ -54,7 +54,7 @@
 <view class="container" style="margin-bottom:12px;margin-top:10px;">
   <scroll-view  scroll-x style="width: 100%">
     <view class="scroll-view_H">
-      <block wx:for-items="{{movieTop}}" wx:for-item="movieTop" wx:key="movieTop:id">
+      <block wx:for-items="{{movieTop}}" wx:for-item="movieTop" wx:key="">
         <view class="bind" bindtap="toDetailsTap" data-details='{{movieTop.id}}'>
           <image class="image" src="{{movieTop.images.small}}" mode="aspectFill"></image>
           <view class="title">{{movieTop.title}}</view>

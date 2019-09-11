@@ -41,8 +41,11 @@ Page({
         let movie = res.data.subjects
         for (var i = 0; i < movie.length; i++) {
           var len = movie[i].rating.average.toString().length
-          if (len == 1) {
-            //console.log("这个奇数是：",movie[i].rating.average)
+          if (movie[i].rating.average == 0.0) {
+            movie[i].rating.average = "暂无评分"
+          }
+          if (len == 1 && movie[i].rating.average != "暂无评分") {
+            //console.log("这个奇数是：", movie[i].rating.average)
             movie[i].rating.average = movie[i].rating.average + '.0'
           }
           //console.log(movie[i].rating.average)

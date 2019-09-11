@@ -87,7 +87,7 @@
 }
 .scroll-view_H{
   display:flex;
-  height:170px;
+  height:155px;
   width:300px;
   flex-direction:row;
   margin-right:40rpx;
@@ -95,13 +95,12 @@
 .bind{
   display:inline-flex;
   flex-direction: column;
-  margin-bottom: 50rpx;
   margin-right: 35px;
   width: 170rpx;
   text-align:center;
 }
 .image{
-  height: 135px;
+  height: 130px;
   width: 100px;
 }
 .avator{

@@ -155,7 +155,7 @@ Page({
         })
       }
     })
-    this.onQuery();//分页加载
+    //this.onQuery();//分页加载
     if (e.path) {
       url = decodeURIComponent(e.path)
     }
