@@ -1,3 +1,12 @@
-<view class="butt">
-  <van-button type="primary" size="large" open-type="feedback">意见反馈</van-button>
+<view class="container">
+  <view class="head">
+    <text>欢迎用户大大向我们提供宝贵意见</text>
+    <view><text>您的反馈是我们前进的动力</text></view>
+  </view>
+  <view class="body">
+    <image class="img" src="/images/aini.jpg"></image>
+  </view>
+  <view class="butt">
+    <van-button type="primary" size="large" open-type="feedback">意见反馈</van-button>
+  </view>
 </view>

@@ -2,7 +2,7 @@
   "backgroundTextStyle": "light",
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "意见反馈",
-  "navigationBarBackgroundColor": "#ECEFF1",
-  "backgroundColor": "#ECEFF1",
+  "navigationBarBackgroundColor": "#00CED1",
+  "backgroundColor": "#00CED1",
   "enablePullDownRefresh": false
 }

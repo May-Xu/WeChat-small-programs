@@ -1,25 +1,25 @@
 page{
-  background:#ECEFF1;
+  background:#ffffff;
 }
 .container{
-  height: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
+  height: auto;
 }
-.title{
-  margin-top: 15%;
-  font-family: "微软雅黑";
-  color: black;
-  font-weight: 700;
+.head{
+  margin-top: 50px;
+  text-align: center;
 }
-.introduce{
-  margin-top: 4%;
-  font-family: "微软雅黑";
-  color: black;
+text{
+  font-size: 18px;
 }
 .butt{
   height: auto;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 50%;
+}
+.body{
+  text-align:center;
+}
+.img{
+  height: 150px;
+  width: 150px;
 }
